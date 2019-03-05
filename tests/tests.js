@@ -1,7 +1,7 @@
 import test from 'ava';
 import matchPropertyValue from '../index.js';
 
-test(t => {
+test('unicode-match-property-value-ecmascript', t => {
 	t.deepEqual(
 		matchPropertyValue('General_Category', 'L'),
 		'Letter'
