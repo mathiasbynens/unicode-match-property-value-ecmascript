@@ -30,10 +30,10 @@
   "devDependencies": {
     "ava": "*",
     "jsesc": "^2.5.2",
-    "unicode-property-value-aliases-ecmascript": "^1.0.4"
+    "unicode-property-value-aliases-ecmascript": "^1.1.0"
   },
   "scripts": {
     "build": "node scripts/build.js",
-    "test": "ava ./tests"
+    "test": "ava tests/tests.js"
   }
 }

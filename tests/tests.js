@@ -1,5 +1,5 @@
-import test from 'ava';
-import matchPropertyValue from '../index.js';
+const test = require('ava');
+const matchPropertyValue = require('../index.js');
 
 test('unicode-match-property-value-ecmascript', t => {
 	t.deepEqual(
@@ -29,5 +29,9 @@ test('unicode-match-property-value-ecmascript', t => {
 	t.deepEqual(
 		matchPropertyValue('Script_Extensions', 'Old_Persian'),
 		'Old_Persian'
+	);
+	t.deepEqual(
+		matchPropertyValue('Script_Extensions', 'Yezi'),
+		'Yezidi'
 	);
 });
